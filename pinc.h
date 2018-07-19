@@ -75,8 +75,8 @@ unsigned char updatePin(volatile unsigned char *port,unsigned char pin,volatile 
     }
     else
     {
-        unsigned char v=0b11111110;
-        unsigned char v1=0b00000001;
+        unsigned char v=0b00000001;
+        unsigned char v1=0b11111110;
         v1<<=pin;
         v1=(unsigned char)~v1;
         v<<=pin;
