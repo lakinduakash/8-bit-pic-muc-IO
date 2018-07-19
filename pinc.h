@@ -65,9 +65,9 @@ unsigned char readPin(volatile unsigned char *port,unsigned char pin)
         return 0;
 }
 
-unsigned char updatePin(volatile unsigned char *port,unsigned char pin)
+unsigned char updatePin(volatile unsigned char *port,unsigned char pin,bool force)
 {
-   if(value==1)
+   if(value==1 && force)
     {
         unsigned char v=0b00000001;
         v<<=pin;
