@@ -75,14 +75,15 @@ unsigned char updatePin(volatile unsigned char *port,unsigned char pin,volatile 
     }
     else
     {
-        unsigned char v=0b00000001;
-        unsigned char v1=0b11111110;
+        unsigned char v=0b01111110;
+        unsigned char v1=0b10000001;
         v1<<=pin;
         v1=(unsigned char)~v1;
         v<<=pin;
         v|=v1;
         *port & = v;
     }
+    
 }
 
 #endif //PINC_HEADER
