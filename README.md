@@ -1,8 +1,16 @@
 # 8-bit-pic-muc-IO
-Set and read digital IO pins easily in 8-bit pic microcontrollers
+Set and read digital IO pins easily in 8-bit pic microcontrollers.
+
+
+To use these functions download headerfile and include in youre project
+```c
+#include<pinc.h>
+```
 
 ## USAGE
-Ex:
+Example:
 ```c
-setPin(TRISB,5,INPUT);
+//pin numbers 
+pinMode(TRISB,5,INPUT);
+pinMode(TRISB,6,OUTPUT);
 ```
