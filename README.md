@@ -1,6 +1,7 @@
 # 8-bit-pic-muc-IO
-Set and read digital IO pins easily in 8-bit pic microcontrollers.
+### Set and read digital IO pins easily (In Arduino style) in 8-bit pic microcontrollers.
 
+Tested with *PIC16f877A*
 
 To use these functions download headerfile and include in youre project
 ```c
